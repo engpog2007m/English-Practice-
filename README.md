@@ -5,7 +5,7 @@ A free, single-page web app that helps Oromo speakers practice
 spoken English. Tap a sentence to hear it, say it out loud, and
 see which words the browser recognized.
 
-**Live demo:** https://yourusername.github.io/english-speaking-practice
+**Live demo:** https://engpog2007m.github.io/english-speaking-practice
 
 ## Features
 - 26 everyday sentences, each with its Afaan Oromoo meaning

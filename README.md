@@ -1,41 +1,50 @@
-# English Speaking Practice for Afaan Oromoo Speakers
-*Haasaa Ingiliffaa: Afaan Ingiliffaa dubbachuu shaakali.*
+# Afaan Lamaan — English ⇄ Afaan Oromoo
+*Afaan Ingiliffaa fi Afaan Oromoo guutummaatti baradhu. Bilisaan.*
 
-A free, single-page web app that helps Oromo speakers practice
-spoken English. Tap a sentence to hear it, say it out loud, and
-see which words the browser recognized.
+A free, complete course in one web page:
+- **Learn English** — for Afaan Oromoo speakers (instructions in Afaan Oromoo)
+- **Learn Afaan Oromoo** — for English speakers (instructions in English)
 
-**Live demo:** https://engpog2007m.github.io/oromo-english-speaking-practice
+**Open the site:** https://engpog2007m.github.io/oromo-english-speaking-practice/
 
-## Features
-- 26 everyday sentences, each with its Afaan Oromoo meaning
-- Listen at normal or slow speed; tap any word to hear it alone
-- Speak & check: green/red word feedback and a score
-- Record your voice and play it back
-- Afaan Oromoo / English interface toggle
-- Progress saved on your own device (no accounts, no tracking)
+## What's inside
+| | English track | Afaan Oromoo track |
+|---|---|---|
+| Lessons | 45 — pronunciation and grammar up to all 12 tenses, passive voice, conditionals, reported speech | 40 — Qubee and reading rules, then grammar up to case endings, derived verbs and the Ethiopian calendar and clock |
+| Phrases | 73 situation units, 1,617 phrases | same (without English idioms) |
+| Words | 3,688 words in 74 topics | same (without English-only lists) |
 
-## How it works
-Plain HTML, CSS and JavaScript, no build step or dependencies.
-Uses the browser's Web Speech API (speech synthesis and
-recognition) and MediaRecorder. Scoring matches the target
-sentence against the recognized words (longest common subsequence).
+Every lesson, phrase unit and word topic has **Learn**, **Cards** (flashcards) and **Quiz** modes, plus a **Dictionary** that searches every word and phrase.
+
+**Speaking practice (English track):** tap ▶ to hear any English word or sentence, then use 🎤 *Speak & check*: correctly said words turn green and missed words turn red, with a score.
+
+**Recording:** record yourself, or ask a native speaker to record Oromo phrases, and compare. Recordings stay on your own device.
+
+Progress is saved in your browser. There are no accounts and no tracking.
 
 ## Browser support
-| Feature | Chrome (Android/desktop) | Safari (iOS) | Firefox |
+| Feature | Chrome (Android/desktop) | Safari (iPhone) | Firefox |
 |---|---|---|---|
-| Listen | Yes | Yes | Yes |
-| Speak & check | Yes | Partial | No |
-| Record | Yes | Yes | Yes |
-Needs https and microphone permission. Speech checking needs internet.
+| Lessons, cards, quiz, dictionary | ✅ | ✅ | ✅ |
+| Listen (English) | ✅ | ✅ | ✅ |
+| Speak & check | ✅ | Partial | ❌ |
+| Record | ✅ | ✅ | ✅ |
 
-## Limitations
-Scoring depends on the browser's speech recognition and may
-mis-hear accented speech. Treat it as a guide, not a grade.
+Speak & check and recording need microphone permission. Speak & check also needs an internet connection. Most devices have no Afaan Oromoo voice, so Oromo audio comes from native-speaker recordings.
 
-## Contributing
-Corrections to the Afaan Oromoo text are very welcome; open an
-issue or a pull request. Sentences live in the `S` array in index.html.
+## Sources
+The content covers every topic, rule and word list from these books. It merges them, corrects them to standard Qubee spelling, and fixes book errors. All explanations and example sentences were written new for this site; no book text was copied.
+1. Abebe Bulto (ed. Andrew Tadross), *Afan Oromo: A Guide to Speaking the Language of Oromo People in Ethiopia*
+2. *Learn to Read, Write and Speak the Oromo Language (Afaan Oromoo Dubbisuu, Barreessuu fi Dubbachuu Baradhu)*
+3. *Priceless Spoken English: Barsiisaa Malee Afaan Ingiliizii …*
+
+See **[COVERAGE.md](COVERAGE.md)** for where each chapter and section of each book is taught on the site.
+
+## Help improve it
+Afaan Oromoo varies by region. Items marked **⚑** on the site still need a native speaker's check. Corrections are very welcome: open an issue or a pull request.
+
+## How it's built
+One file, `index.html`: plain HTML, CSS and JavaScript, with no build step and no dependencies. It uses the browser's Web Speech API (speech synthesis and recognition), MediaRecorder and IndexedDB.
 
 ## License
 MIT
